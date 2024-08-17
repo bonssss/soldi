@@ -1,7 +1,6 @@
 import React from 'react';
 import cbe from '../assets/cbe.jpg'
 import eliab from '../assets/eliab.jpg'
-import gojo from '../assets/gojo.jpg'
 import stg from '../assets/stg.jpg'
 import teacher from '../assets/teacher.jpg'
 import tomoka from '../assets/tomoka.jpg'

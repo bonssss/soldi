@@ -11,44 +11,44 @@ const Services = () => {
         <h2 className="text-4xl font-bold text-blue-900 mb-12">Our Services</h2>
         <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <li className="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#FF9100] hover:text-white">
-            <div className="relative mb-4 h-32 overflow-hidden rounded-t-lg">
+            <div className="relative mb-4">
               <img
                 src={digitalMarketingImg}
                 alt="Digital Marketing Strategies"
-                className="w-full h-full object-cover"
+                className="w-full h-32 object-contain rounded-t-lg transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-2xl font-semibold mb-2 text-blue-900 hover:text-white transition-colors duration-300">Digital Marketing Strategies</h3>
             <p className="text-gray-600 hover:text-white transition-colors duration-300">Tailored strategies to enhance your digital presence.</p>
           </li>
           <li className="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#FF9100] hover:text-white">
-            <div className="relative mb-4 h-32 overflow-hidden rounded-t-lg">
+            <div className="relative mb-4">
               <img
                 src={appDevelopmentImg}
                 alt="Application Development"
-                className="w-full h-full object-cover"
+                className="w-full h-32 object-contain rounded-t-lg transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-2xl font-semibold mb-2 text-blue-900 hover:text-white transition-colors duration-300">Application Development</h3>
             <p className="text-gray-600 hover:text-white transition-colors duration-300">Custom applications designed for your business needs.</p>
           </li>
           <li className="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#FF9100] hover:text-white">
-            <div className="relative mb-4 h-32 overflow-hidden rounded-t-lg">
+            <div className="relative mb-4">
               <img
                 src={partnershipImg}
                 alt="Partnership Establishment"
-                className="w-full h-full object-cover"
+                className="w-full h-32 object-contain rounded-t-lg transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-2xl font-semibold mb-2 text-blue-900 hover:text-white transition-colors duration-300">Partnership Establishment</h3>
             <p className="text-gray-600 hover:text-white transition-colors duration-300">Building strong business relationships and collaborations.</p>
           </li>
           <li className="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#FF9100] hover:text-white">
-            <div className="relative mb-4 h-32 overflow-hidden rounded-t-lg">
+            <div className="relative mb-4">
               <img
                 src={businessSolutionsImg}
                 alt="Small and Medium Business Solutions"
-                className="w-full h-full object-cover"
+                className="w-full h-32 object-contain rounded-t-lg transition-transform duration-300 hover:scale-105"
               />
             </div>
             <h3 className="text-2xl font-semibold mb-2 text-blue-900 hover:text-white transition-colors duration-300">Small and Medium Business Solutions</h3>
