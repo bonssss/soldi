@@ -1,37 +1,66 @@
 import React from 'react';
+import 'tailwindcss/tailwind.css';
+import About from './About';
+import Services from './Services ';
+import BG from '../assets/bg.jpg'
 
 const Home = () => {
   return (
     <div className="home">
-      <section className="bg-cover bg-center h-screen text-white flex flex-col justify-center items-center" style={{ backgroundImage: "url('/path_to_hero_image.jpg')" }}>
-        <h1 className="text-5xl font-bold mb-4">Welcome to SOLDI</h1>
-        <p className="text-xl mb-8">Leading the Digital Transformation.</p>
-        <button className="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">Explore Our Services</button>
+      {/* Welcome Section */}
+      <section
+  className="relative h-screen bg-cover bg-center flex flex-col justify-center items-center overflow-hidden"
+  style={{ position: 'relative' }}
+>
+  <div
+    style={{
+      content: '',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundImage: `url(${BG})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      opacity: 0.1, // Adjust the opacity here
+      zIndex: -1 // Make sure the background is behind the content
+    }}
+  />
+
+
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900 to-transparent opacity-75"></div>
+
+        {/* Creative Shapes */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute w-96 h-96 bg-gradient-to-r from-[#FF9100] to-blue-900 rounded-full opacity-40 -top-20 -left-20 transform rotate-45"></div>
+          <div className="absolute w-80 h-80 bg-gradient-to-t from-[#FF9100] to-blue-900 rounded-full opacity-30 -bottom-20 -right-20 transform rotate-12"></div>
+        </div>
+
+        {/* Welcome Text with Animation */}
+        <div className="relative z-10 text-center animate-fade-in">
+          <h1 className="text-6xl font-bold mb-4 text-[#FF9100] animate-bounce">
+            Welcome to SOLDI
+          </h1>
+          <p className="text-2xl mb-8 text-gray-900 font-bold">
+  Digital Solutions And Marketing
+</p>
+
+          <button className="bg-[#FF9100] text-blue-900 py-2 px-6 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">
+            Explore Our Services
+          </button>
+        </div>
       </section>
+
+      {/* About Us Section */}
       <section className="py-16 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">About Us</h2>
-          <p className="text-lg text-gray-700">SOLDI is dedicated to revolutionizing marketing strategies by transitioning businesses from local to digital prominence.</p>
-        </div>
+        <About/>
       </section>
-      <section className="py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Digital Marketing Strategies</h3>
-              <p className="text-gray-600">Tailored marketing strategies to enhance your digital presence.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Application Development</h3>
-              <p className="text-gray-600">Custom applications designed to meet your business needs.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Partnership Establishment</h3>
-              <p className="text-gray-600">Building strong business relationships and collaborations.</p>
-            </div>
-          </div>
-        </div>
+
+      {/* Our Services Section */}
+      <section className="py-16 bg-white">
+        <Services/>
       </section>
     </div>
   );
